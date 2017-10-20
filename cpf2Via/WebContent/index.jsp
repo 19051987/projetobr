@@ -4,8 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>2 Via Boleto Bradesco</title>
 
 </head>
@@ -17,7 +16,7 @@
 	<div class="row">
 		<img src="imagens/irtBanner.jpg" style="width: 100%" />
 	</div>
-	<div class="container" align="center"></div>
+	<div class="container" align="center"></div><img src="imagens/boleto-bradesco-1.jpg" style="width: 100%" />
 	<label for="cpf">Segunda Via Boleto</label>
 	<form name="FormCpf" class="form-inline">
 		<br> <br>
@@ -28,7 +27,6 @@
 					name="cpfcnpj"
 					onkeypress="FormataCPF(document.FormCpf,'cpf_cnpj',11,8,5,2,event);">
 				<input value="Enviar" class="btn btn-primary" type="submit">
-
 			</div>
 		</div>
 	</form>
