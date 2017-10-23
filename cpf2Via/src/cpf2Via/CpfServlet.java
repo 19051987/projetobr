@@ -4,15 +4,36 @@ import java.io.IOException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/cpfServlet")
-public class CpfServlet {
+public class CpfServlet  extends HttpServlet{
 	
-	  protected String doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		return CpfService.getCpf2ViaResponse();
-		  
+	private static final long serialVersionUID = 1L;
+	 
+	  
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+		    request.setAttribute("data", CpfService.getCpf2ViaResponse());
+		    response.setContentType("text/xml");		    
+		    request.getRequestDispatcher("/protegido/CpfServlet.jsp").forward(request, response);
+		    processRequest(request, response);
 	  }
+
+
+	private void processRequest(HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		System.out.println("a"); 
+	}
+
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		super.doGet(req, resp);
+	}
 
 }
