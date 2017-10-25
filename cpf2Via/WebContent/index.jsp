@@ -15,7 +15,7 @@
 
 
  <div class="row">
-  <img src="imagens/irtBanner.jpg" style="width: 100%" />
+  <img src="imagens/onstar logo.jpg" style="width: 30%" /><img src="imagens/chevrolet.png" style="width: 30%" />
  </div>
  <div class="container" align="center"></div><img src="imagens/faixabradesco (1).jpg" style="width: 100%" />
  <label for="cpf">Segunda Via Boleto</label>
